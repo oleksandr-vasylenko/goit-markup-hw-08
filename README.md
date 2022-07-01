@@ -1,4 +1,4 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
 - HTML Layout
 - HTML Porfolio & CSS (Text Colors and Fonts)
@@ -7,3 +7,4 @@
 - Positioned elements, transitions and animations
 - Elements of Forms
 - BEM Methodology, SAAS Preprocessor
+- Adaptive layout, Adaptive Graphics
