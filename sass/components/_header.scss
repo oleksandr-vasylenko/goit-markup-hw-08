@@ -1,0 +1,7 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  @include flexCenter(flex, center, null);
+}

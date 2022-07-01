@@ -1,0 +1,28 @@
+%main-title {
+  margin-bottom: 50px;
+
+  color: var(--secondary-text);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+%footer-title {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--white-text);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+%social {
+  @include flexCenter();
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}

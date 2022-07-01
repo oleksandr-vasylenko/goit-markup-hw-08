@@ -1,0 +1,30 @@
+.member-social {
+  display: flex;
+  justify-content: center;
+}
+
+.member-social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.member-social__link {
+  @extend %social;
+
+  color: #afb1b8;
+
+  transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+    color: var(--white-text);
+  }
+}
+
+.member-social__icon {
+  fill: currentColor;
+}
