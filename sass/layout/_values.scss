@@ -3,6 +3,8 @@
 // }
 
 .values__item {
+  margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
   }
@@ -27,19 +29,19 @@
   border-radius: 4px;
 }
 
-// .values__headline {
-//   margin-bottom: 10px;
+.values__headline {
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
-//   color: var(--secondary-text);
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-// }
-
-// .values__description {
-//   color: var(--main-text);
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-// }
+.values__description {
+  color: var(--main-text);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
