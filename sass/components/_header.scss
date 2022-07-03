@@ -3,5 +3,10 @@
 }
 
 .header__container {
-  @include flexCenter(flex, center, null);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  //   @include flexCenter(flex, center, null);
 }

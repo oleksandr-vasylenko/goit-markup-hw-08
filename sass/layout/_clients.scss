@@ -1,15 +1,25 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .clients__item {
   height: 92px;
-  margin-right: 30px;
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 30px) / 2);
 
-  &:last-child {
-    margin-right: 0;
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
   }
+
+  &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+
+  //   width: calc((100% - 150px) / 6);
+  //   margin-right: 30px;
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
 }
 
 .client__link {
