@@ -1,38 +1,40 @@
-.header__contacts {
-  display: none;
-
+.contacts__link {
   //   @include flexCenter(flex, center, null);
-  //   margin-left: auto;
+
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: var(--accent);
+
+  //   color: var(--main-text);
+  //   font-size: 14px;
+  //   line-height: 1.14;
+  //   letter-spacing: 0.02em;
+
+  transition: color var(--speed) var(--duration);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
-// .contacts__link {
-//   @include flexCenter(flex, center, null);
+.contacts__icon {
+  display: none;
+  //   fill: currentColor;
+  //   margin-right: 10px;
+}
 
-//   padding-top: 32px;
-//   padding-bottom: 32px;
+.contacts .contacts__item + .contacts__item {
+  margin-bottom: 32px;
 
-//   color: var(--main-text);
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-
-//   transition: color var(--speed) var(--duration);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent);
-//   }
-// }
-
-// .contacts__icon {
-//   fill: currentColor;
-//   margin-right: 10px;
-// }
-
-// .contacts .contacts__item + .contacts__item {
-//   margin-left: 50px;
-// }
+  // margin-left: 50px;
+}
 
 // .footer__connect {
 //   margin-right: auto;

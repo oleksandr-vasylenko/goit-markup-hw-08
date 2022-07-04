@@ -13,14 +13,40 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__container container">
-        <a href="./index.html" lang="en" class="logo">Web<span class="logo__text logo__text--black">Studio</span></a>
+        <a href="./index.html" lang="en" class="logo"
+          >Web<span class="logo__text logo__text--black">Studio</span></a
+        >
+        <div class="header__menu" id="header__menu" data-menu>menu</div>
         <nav class="navigation header__navigation">
+          <button type="button" class="menu" data-menu-button>
+            <svg
+              class="menu__icon"
+              width="40"
+              height="40"
+              aria-expanded="false"
+              aria-controls="header__menu"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu__lines"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+              <use
+                class="menu__cross"
+                href="./images/icons.svg#icon-menu-close"
+              ></use>
+            </svg>
+          </button>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link navigation__link--current">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="navigation__link navigation__link--current"
+                >Портфолио</a
+              >
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__link">Контакты</a>
@@ -30,7 +56,11 @@
 
         <ul class="contacts header__contacts">
           <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" lang="en" class="contacts__link">
+            <a
+              href="mailto:info@devstudio.com"
+              lang="en"
+              class="contacts__link"
+            >
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -57,7 +87,9 @@
           <!--title to be hidden-->
           <ul class="filter">
             <li class="filter__item">
-              <button type="button" class="filter__btn filter__btn--active">Все</button>
+              <button type="button" class="filter__btn filter__btn--active">
+                Все
+              </button>
             </li>
             <li class="filter__item">
               <button type="button" class="filter__btn">Веб-сайты</button>
@@ -77,9 +109,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/tech-crack.jpg" alt="Ноутбук с веб-сайтом" width="370" />
+                  <img
+                    src="./images/portfolio/tech-crack.jpg"
+                    alt="Ноутбук с веб-сайтом"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -93,14 +130,21 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/poster-no-vs-gs.jpg" alt="Баскетболисты" width="370" />
+                  <img
+                    src="./images/portfolio/poster-no-vs-gs.jpg"
+                    alt="Баскетболисты"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
                 <div class="projects__info">
-                  <h2 class="projects__name">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="projects__name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="projects__service">Дизайн</p>
                 </div>
               </a>
@@ -109,9 +153,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/seafood-rest.jpg" alt="Надпись на фоне рыбы" width="370" />
+                  <img
+                    src="./images/portfolio/seafood-rest.jpg"
+                    alt="Надпись на фоне рыбы"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -125,9 +174,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/prime-project.jpg" alt="Наушники" width="370" />
+                  <img
+                    src="./images/portfolio/prime-project.jpg"
+                    alt="Наушники"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -141,9 +195,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/boxes-project.jpg" alt="Коробки" width="370" />
+                  <img
+                    src="./images/portfolio/boxes-project.jpg"
+                    alt="Коробки"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -157,9 +216,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/inspiration-has-no-borders.jpg" alt="Монитор" width="370" />
+                  <img
+                    src="./images/portfolio/inspiration-has-no-borders.jpg"
+                    alt="Монитор"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -173,9 +237,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/limited-edition.jpg" alt="Книга" width="370" />
+                  <img
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="Книга"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -189,9 +258,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/lab-project.jpg" alt="Бирка" width="370" />
+                  <img
+                    src="./images/portfolio/lab-project.jpg"
+                    alt="Бирка"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -205,9 +279,14 @@
             <li class="projects__item">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img src="./images/portfolio/growing-business.jpg" alt="Руки на ноутбуке" width="370" />
+                  <img
+                    src="./images/portfolio/growing-business.jpg"
+                    alt="Руки на ноутбуке"
+                    width="370"
+                  />
                   <p class="projects__overlay">
-                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
@@ -226,16 +305,27 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__connect">
-          <a href="./index.html" lang="en" class="logo">Web<span class="logo__text logo__text--white">Studio</span></a>
+          <a href="./index.html" lang="en" class="logo"
+            >Web<span class="logo__text logo__text--white">Studio</span></a
+          >
           <address class="address">
             <p class="addresss__text">г. Киев, пр-т Леси Украинки, 26</p>
           </address>
           <ul class="contacts footer__contacts">
             <li class="contacts__item contacts__item--footer">
-              <a href="mailto:info@devstudio.com" lang="en" class="contacts__link contacts__link--footer">info@devstudio.com</a>
+              <a
+                href="mailto:info@devstudio.com"
+                lang="en"
+                class="contacts__link contacts__link--footer"
+                >info@devstudio.com</a
+              >
             </li>
             <li class="contacts__item contacts__item--footer">
-              <a href="tel:+380961111111" class="contacts__link contacts__link--footer">+38 096 111 11 11</a>
+              <a
+                href="tel:+380961111111"
+                class="contacts__link contacts__link--footer"
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
         </div>
@@ -278,7 +368,12 @@
             <b class="subscription__title">Подпишитесь на рассылку</b>
             <div class="subscription__input">
               <label><span class="visually-hidden">E-mail</span></label>
-              <input type="email" name="email" class="subscription__field" placeholder="E-mail" />
+              <input
+                type="email"
+                name="email"
+                class="subscription__field"
+                placeholder="E-mail"
+              />
               <button type="submit" class="subscription__btn">
                 Подписаться
                 <svg class="subscription__icon" width="24" height="24">

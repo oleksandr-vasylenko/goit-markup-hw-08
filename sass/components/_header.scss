@@ -3,10 +3,18 @@
 }
 
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
   //   @include flexCenter(flex, center, null);
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  //   @include flexCenter(flex, center, null);
+  //   margin-left: auto;
 }
