@@ -384,6 +384,8 @@ ul {
   background-color: #ffffff;
   color: var(--main-text);
   font-family: Roboto, sans-serif;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media screen and (min-width: 1200px) {
   .page {
@@ -401,6 +403,7 @@ a {
   width: 480px;
   margin-left: auto;
   margin-right: auto;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -440,6 +443,30 @@ a {
 
 .menu.is-open .menu__lines {
   display: none;
+}
+
+.hero__btn {
+  padding: 10px 32px 10px 32px;
+  min-width: 200px;
+  background-color: var(--accent);
+  color: var(--white-text);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: background-color var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
+}
+.hero__btn:hover, .hero__btn:focus {
+  background-color: #188ce8;
 }
 
 .header__contacts {
@@ -511,6 +538,16 @@ a {
   display: none;
 }
 
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -519,20 +556,22 @@ a {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/hero-bcg.jpg);
 }
 
-.values__item {
+.hero .container {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.values__item:not(:last-child) {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  .values__item {
+  .values__item:not(:last-child) {
     width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .values__item {
-    width: calc((100% - 90px) / 4);
-  }
   .values__item:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
