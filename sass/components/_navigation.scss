@@ -50,7 +50,16 @@
 // }
 
 .header__menu {
-  background-color: aquamarine;
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: 796px;
+  background-color: aquamarine;
+
+  &.is-open {
+    display: block;
+  }
 }
