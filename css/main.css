@@ -317,6 +317,7 @@ summary {
   --secondary-text: #212121;
   --accent: #2196f3;
   --grey-accent: #f5f4fa;
+  --grey-social: #afb1b8;
   --duration: cubic-bezier(0.4, 0, 0.2, 1);
   --speed: 250ms;
 }
@@ -532,8 +533,47 @@ a {
           transform: translate(-50%, -50%) scale(0.9);
 }
 
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .navigation__list {
   display: none;
+}
+
+.member-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.member-social__item {
+  margin-right: 34px;
+}
+.member-social__item:last-child {
+  margin-right: 0;
+}
+
+.member-social__link {
+  color: var(--grey-social);
+  -webkit-transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration);
+}
+.member-social__link:hover, .member-social__link:focus {
+  background-color: var(--accent);
+  color: var(--white-text);
+}
+
+.member-social__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  fill: currentColor;
 }
 
 .hero__title {
@@ -617,7 +657,33 @@ a {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.members__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.members__info {
+  padding-top: 30px;
+  padding-bottom: 36px;
+}
+
+.members__name {
+  margin-bottom: 10px;
+  color: var(--secondary-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.members__position {
+  margin-bottom: 28px;
+  color: var(--main-text);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .clients__list {
