@@ -565,8 +565,7 @@ a {
   transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration);
 }
 .member-social__link:hover, .member-social__link:focus {
-  background-color: var(--accent);
-  color: var(--white-text);
+  color: var(--accent);
 }
 
 .member-social__icon {
