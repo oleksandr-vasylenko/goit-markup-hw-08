@@ -384,9 +384,6 @@ ul {
   background-color: #ffffff;
   color: var(--main-text);
   font-family: Roboto, sans-serif;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 @media screen and (min-width: 1200px) {
   .page {
@@ -401,9 +398,10 @@ a {
 
 .container {
   padding: 60px 15px;
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  max-width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
