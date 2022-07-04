@@ -4,19 +4,20 @@
 
 .footer {
   background-color: #2f303a;
+  text-align: center;
 
   //     padding-top: 60px;
   //   padding-bottom: 60px;
 }
 
-// .address {
-//   margin-top: 20px;
-// }
+.address {
+  margin-top: 20px;
+}
 
-// .addresss__text {
-//   color: var(--white-text);
-//   font-style: normal;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-// }
+.addresss__text {
+  color: var(--white-text);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}

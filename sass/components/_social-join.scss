@@ -1,30 +1,32 @@
-// .join-social__list {
-//   display: flex;
-//   justify-content: center;
-// }
+.join-social__list {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
 
-// .join-social__item {
-//   margin-right: 10px;
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
+.join-social__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
-// .join-social__link {
-//   @extend %social;
+.join-social__link {
+  @extend %social;
 
-//   color: var(--white-text);
-//   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-text);
+  background-color: rgba(255, 255, 255, 0.1);
 
-//   transition: background-color var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration);
 
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent);
-//     color: var(--white-text);
-//   }
-// }
+  &:hover,
+  &:focus {
+    background-color: var(--accent);
+    color: var(--white-text);
+  }
+}
 
-// .join-social__icon {
-//   fill: currentColor;
-// }
+.join-social__icon {
+  fill: currentColor;
+}
