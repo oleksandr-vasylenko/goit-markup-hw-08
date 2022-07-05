@@ -34,7 +34,9 @@
 }
 
 .contacts__icon {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   //   fill: currentColor;
   //   margin-right: 10px;
 }

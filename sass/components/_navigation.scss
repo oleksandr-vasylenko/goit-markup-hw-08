@@ -1,19 +1,17 @@
 .menu {
-  display: none;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-
-  width: 100%;
-  height: 796px;
-  background-color: var(--white-text);
-
-  &.is-open {
-    display: block;
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    background-color: var(--white-text);
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -32,6 +30,9 @@
   &:hover,
   &:focus {
     color: var(--accent);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 
   //   @include flexCenter;
@@ -55,7 +56,7 @@
 }
 
 .header__navigation {
-  margin-bottom: 302px;
+  margin-bottom: auto;
   // display: flex;
   // flex-direction: row-reverse;
   // justify-content: space-between;
@@ -99,21 +100,21 @@
     color: var(--accent);
   }
 
-  //   &--current {
-  //     color: var(--accent);
+  &--current {
+    color: var(--accent);
 
-  //     &::after {
-  //       content: '';
-  //       position: absolute;
-  //       left: 0;
-  //       bottom: -1px;
-  //       width: 100%;
+    //     &::after {
+    //       content: '';
+    //       position: absolute;
+    //       left: 0;
+    //       bottom: -1px;
+    //       width: 100%;
 
-  //       border-radius: 2px;
-  //       height: 4px;
-  //       background: var(--accent);
-  //     }
-  //   }
+    //       border-radius: 2px;
+    //       height: 4px;
+    //       background: var(--accent);
+    // }
+  }
 }
 
 .profiles {
