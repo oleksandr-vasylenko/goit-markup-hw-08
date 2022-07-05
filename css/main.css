@@ -612,6 +612,7 @@ a {
   margin: 0;
   padding: 0;
   border: 0;
+  color: var(--secondary-text);
   background-color: transparent;
 }
 .menu__btn:hover, .menu__btn:focus {
@@ -622,15 +623,16 @@ a {
   fill: currentColor;
 }
 
-.menu .menu__cross {
+.menu__btn .menu__cross {
   display: none;
 }
 
-.menu.is-open .menu__cross {
+.menu__btn.is-open .menu__cross {
   display: block;
+  fill: var(--secondary-text);
 }
 
-.menu.is-open .menu__lines {
+.menu__btn.is-open .menu__lines {
   display: none;
 }
 
