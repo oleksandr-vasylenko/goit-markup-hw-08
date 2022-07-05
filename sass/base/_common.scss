@@ -42,6 +42,10 @@ ul {
       padding-right: 0;
     }
   }
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 a {
