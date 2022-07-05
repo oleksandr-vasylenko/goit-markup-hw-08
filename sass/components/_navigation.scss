@@ -1,6 +1,7 @@
 .menu {
+  display: none;
+
   position: absolute;
-  // display: none;
   top: 0;
   left: 0;
   padding-top: 48px;
@@ -9,7 +10,7 @@
 
   width: 100%;
   height: 796px;
-  background-color: rgba(160, 126, 126, 0.808);
+  background-color: var(--white-text);
 
   &.is-open {
     display: block;
@@ -17,6 +18,7 @@
 }
 
 .menu__btn {
+  z-index: 1;
   top: 10px;
   right: 15px;
 
@@ -87,12 +89,12 @@
   //   line-height: 1.14;
   //   letter-spacing: 0.02em;
 
-  //   transition: color var(--speed) var(--duration);
+  transition: color var(--speed) var(--duration);
 
-  //   &:hover,
-  //   &:focus {
-  //     color: var(--accent);
-  //   }
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 
   //   &--current {
   //     color: var(--accent);
@@ -116,8 +118,15 @@
   margin-top: 64px;
 }
 
-.profiles__item:not(:last-child) {
-  margin-right: 20px;
+.profiles__item {
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
 }
 
 .profiles__link {
@@ -129,3 +138,11 @@
 
   color: var(--accent);
 }
+
+// .profiles__link::after {
+//   width: 1px;
+//   height: 22px;
+//   color: rgba(33, 33, 33, 0.2);
+// }
+
+// .profiles__item:not(:last-child)
