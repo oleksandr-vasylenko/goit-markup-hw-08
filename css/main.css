@@ -446,6 +446,45 @@ a {
   }
 }
 
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -7.5px -4px;
+  margin-bottom: 40px;
+}
+
+.filter__btn {
+  padding: 6px 22px 6px 22px;
+  color: var(--secondary-text);
+  background-color: var(--grey-accent);
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
+  transition: background-color var(--speed) var(--duration), color var(--speed) var(--duration), box-shadow var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
+}
+.filter__btn:hover, .filter__btn:focus, .filter__btn--active {
+  color: var(--white-text);
+  background-color: var(--accent);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter__item {
+  margin: 7.5px 4px;
+}
+
 .contacts__link {
   font-weight: 500;
   font-size: 34px;
@@ -588,6 +627,9 @@ a {
           transform: translate(-50%, -50%) scale(0.9);
 }
 
+.menu {
+  z-index: 2;
+}
 @media screen and (max-width: 767px) {
   .menu {
     position: fixed;
@@ -611,7 +653,7 @@ a {
 }
 
 .menu__btn {
-  z-index: 1;
+  z-index: 3;
   top: 10px;
   right: 15px;
   display: -webkit-inline-box;
@@ -1018,4 +1060,77 @@ a {
 }
 .client__link:hover .clients__logo, .client__link:focus .clients__logo {
   fill: var(--accent);
+}
+
+.projects__item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.projects__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__overlay {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-text);
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform var(--speed) var(--duration);
+  transition: -webkit-transform var(--speed) var(--duration);
+  transition: transform var(--speed) var(--duration);
+  transition: transform var(--speed) var(--duration), -webkit-transform var(--speed) var(--duration);
+}
+.projects__item .projects__link:hover .projects__overlay, .projects__item .projects__link:focus .projects__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.projects__item .projects__info {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.projects__name {
+  padding-bottom: 4px;
+  color: var(--secondary-text);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects__service {
+  color: var(--main-text);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.projects__link {
+  display: block;
+  -webkit-transition: -webkit-box-shadow var(--speed) var(--duration);
+  transition: -webkit-box-shadow var(--speed) var(--duration);
+  transition: box-shadow var(--speed) var(--duration);
+  transition: box-shadow var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
+}
+.projects__link:hover, .projects__link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }/*# sourceMappingURL=main.css.map */
