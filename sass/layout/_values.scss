@@ -1,18 +1,20 @@
-// .values__list {
-//   display: flex;
-// }
-
-.values__item:not(:last-child) {
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 60px) / 2);
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
-  }
+.values__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+
+// .values__item:not(:last-child) {
+//   margin-bottom: 30px;
+
+//   @media screen and (min-width: 768px) {
+//     width: calc((100% - 60px) / 2);
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     width: calc((100% - 90px) / 4);
+//   }
+// }
 
 .values__block {
   display: flex;
