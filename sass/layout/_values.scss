@@ -1,20 +1,22 @@
 .values__list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (max-width: 479px) {
+    flex-direction: column;
+  }
 }
 
-// .values__item:not(:last-child) {
-//   margin-bottom: 30px;
+.values__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
 
-//   @media screen and (min-width: 768px) {
-//     width: calc((100% - 60px) / 2);
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: calc((100% - 90px) / 4);
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .values__block {
   display: flex;

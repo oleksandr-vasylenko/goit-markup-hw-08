@@ -54,32 +54,42 @@ a {
 
 .container {
   padding: 60px 15px;
-
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  // margin-left: auto;
+  // margin-right: auto;
   width: 100%;
-  max-width: 480px;
 
-  // margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    & {
+      max-width: 480px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     & {
-      width: 768px;
+      max-width: 768px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     & {
-      width: 1200px;
+      max-width: 1200px;
     }
   }
 }
 
-.section {
-  @media screen and (min-width: 1200px) {
-    & {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-  }
-}
+// .section {
+//   @media screen and (max-width: 1199px) {
+//     & {
+//       padding-top: 60px;
+//       padding-bottom: 60px;
+//     }
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     & {
+//       padding-top: 94px;
+//       padding-bottom: 94px;
+//     }
+//   }
+// }

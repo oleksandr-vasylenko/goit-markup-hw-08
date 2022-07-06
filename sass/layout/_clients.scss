@@ -8,11 +8,13 @@
   height: 92px;
   width: calc((100% - 30px) / 2);
 
-  //   width: calc((100% - 150px) / 6);
-  //   margin-right: 30px;
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .client__link {
