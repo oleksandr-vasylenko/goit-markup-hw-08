@@ -1,21 +1,22 @@
 .member-social {
   display: flex;
   justify-content: center;
+  gap: 34px;
 }
 
-.member-social__item {
-  margin-right: 34px;
+// .member-social__item {
+//   margin-right: 34px;
 
-  &:last-child {
-    margin-right: 0;
-  }
+//   &:last-child {
+//     margin-right: 0;
+//   }
 
-  //     margin-right: 10px;
+//     margin-right: 10px;
 
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
-}
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
 
 .member-social__link {
   //   @extend %social;

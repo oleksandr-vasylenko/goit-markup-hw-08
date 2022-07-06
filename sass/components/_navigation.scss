@@ -75,21 +75,22 @@
   // margin-left: 93px;
 }
 
-// .navigation__list {
-// display: none;
-//   display: flex;
-// }
+.navigation__list {
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  // }
 
-// .navigation__item {
-
-// }
-
-.navigation__item:not(:last-child) {
-  margin-bottom: 32px;
-
-  // position: relative;
-  // margin-right: 50px;
+  // .navigation__item {
 }
+
+// .navigation__item:not(:last-child) {
+//   margin-bottom: 32px;
+
+// position: relative;
+// margin-right: 50px;
+// }
 
 .navigation__link {
   font-weight: 500;

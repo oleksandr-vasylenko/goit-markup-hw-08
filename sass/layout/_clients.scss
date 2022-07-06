@@ -1,19 +1,12 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
   height: 92px;
   width: calc((100% - 30px) / 2);
-
-  &:nth-child(2n + 1) {
-    margin-right: 30px;
-  }
-
-  &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
 
   //   width: calc((100% - 150px) / 6);
   //   margin-right: 30px;
