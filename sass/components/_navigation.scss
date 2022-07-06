@@ -94,17 +94,14 @@
 
 .navigation__link {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text);
 
   //   display: block;
   //   padding-top: 32px;
   //   padding-bottom: 32px;
-
-  //   line-height: 1.14;
-  //   letter-spacing: 0.02em;
 
   transition: color var(--speed) var(--duration);
 
@@ -127,6 +124,11 @@
     //       height: 4px;
     //       background: var(--accent);
     // }
+
+    @media screen and (max-width: 480px) {
+      font-size: 40px;
+      line-height: 1.18;
+    }
   }
 }
 
