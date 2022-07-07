@@ -1084,7 +1084,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 34px;
+  gap: 36px;
 }
 
 .member-social__link {
