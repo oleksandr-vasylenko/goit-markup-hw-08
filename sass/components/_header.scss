@@ -6,15 +6,19 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
-  //   @include flexCenter(flex, center, null);
-}
+  justify-content: space-between;
 
-.header__contacts {
-  display: flex;
-  flex-direction: column-reverse;
   //   @include flexCenter(flex, center, null);
-  //   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }

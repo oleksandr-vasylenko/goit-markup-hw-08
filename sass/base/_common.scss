@@ -55,26 +55,21 @@ a {
 .container {
   padding: 60px 15px;
   margin: 0 auto;
-  // margin-left: auto;
-  // margin-right: auto;
   width: 100%;
 
-  @media screen and (max-width: 767px) {
-    & {
-      max-width: 480px;
-    }
+  // margin-left: auto;
+  // margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      max-width: 768px;
-    }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    & {
-      max-width: 1200px;
-    }
+    max-width: 1200px;
   }
 }
 
