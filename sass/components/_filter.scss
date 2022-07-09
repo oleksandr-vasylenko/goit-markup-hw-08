@@ -4,7 +4,10 @@
   flex-wrap: wrap;
   gap: 15px 8px;
   margin-bottom: 40px;
-  //   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter__btn {

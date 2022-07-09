@@ -2,11 +2,22 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  // flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .projects__item {
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 
   //   margin-right: 30px;
   //   width: calc((100% - 60px) / 3);
@@ -27,7 +38,7 @@
 
 .projects__overlay {
   position: absolute;
-  top: 0;
+  top: 1px;
   @include flexCenter(flex, center, null);
   padding-left: 24px;
   padding-right: 24px;

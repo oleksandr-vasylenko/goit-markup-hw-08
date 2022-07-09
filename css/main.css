@@ -337,6 +337,7 @@ summary {
   overflow: hidden;
 }
 
+.services__title,
 .team__title,
 .clients__title {
   margin-bottom: 30px;
@@ -453,6 +454,13 @@ a {
       flex-wrap: wrap;
   gap: 15px 8px;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .filter__btn {
@@ -1087,7 +1095,9 @@ a {
 
 @media screen and (max-width: 767px) {
   .header__navigation {
-    margin-bottom: auto;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -1425,7 +1435,44 @@ a {
 }
 
 .services {
-  display: none;
+  padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__item {
+  width: calc((100% - 60px) / 3);
+}
+.services__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services__thumb {
+  position: relative;
+}
+
+.services__name {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
@@ -1554,9 +1601,29 @@ a {
           flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .projects {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .projects__item {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .projects__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .projects__thumb {
@@ -1566,7 +1633,7 @@ a {
 
 .projects__overlay {
   position: absolute;
-  top: 0;
+  top: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

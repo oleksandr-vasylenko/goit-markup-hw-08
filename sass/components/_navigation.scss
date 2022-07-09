@@ -74,7 +74,7 @@
 
 .header__navigation {
   @media screen and (max-width: 767px) {
-    margin-bottom: auto;
+    flex-grow: 1;
   }
   // display: flex;
   // flex-direction: row-reverse;
