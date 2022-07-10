@@ -89,13 +89,16 @@
 // margin-left: 50px;
 // }
 
-// .footer__connect {
-//   margin-right: auto;
-// }
+.footer__connect {
+  margin-right: auto;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
 
 .footer__contacts {
   margin-top: 8px;
-  margin-bottom: 60px;
 
   // margin-top: 9px;
   // align-items: flex-start;

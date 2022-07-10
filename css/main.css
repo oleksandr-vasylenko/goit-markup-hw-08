@@ -585,9 +585,17 @@ a {
   }
 }
 
+.footer__connect {
+  margin-right: auto;
+}
+@media screen and (max-width: 1199px) {
+  .footer__connect {
+    margin-bottom: 60px;
+  }
+}
+
 .footer__contacts {
   margin-top: 8px;
-  margin-bottom: 60px;
 }
 
 .footer__contacts .contacts__item--footer + .contacts__item--footer {
@@ -608,9 +616,36 @@ a {
   color: var(--accent);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    padding-left: 76px;
+    padding-right: 89px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .footer {
   background-color: #2f303a;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .address {
@@ -1247,6 +1282,17 @@ a {
   fill: currentColor;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer__subscription {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscription {
+    margin-left: 93px;
+  }
+}
+
 .subscription__input {
   margin-top: 20px;
   display: -webkit-box;
@@ -1260,15 +1306,20 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .subscription__field {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 20px;
-  width: 100%;
   height: 50px;
-  left: 815px;
-  top: 2787px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1283,9 +1334,21 @@ a {
 .subscription__field:focus {
   border-color: var(--accent);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 477px) {
   .subscription__field {
-    max-width: 450px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 478px) {
+  .subscription__field {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__field {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 

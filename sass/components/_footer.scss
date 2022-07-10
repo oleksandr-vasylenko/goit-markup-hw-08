@@ -1,10 +1,26 @@
-// .footer__container {
-//   @include flexCenter(flex, baseline, null);
-// }
+.footer__container {
+  @media screen and (min-width: 768px) {
+    padding-left: 76px;
+    padding-right: 89px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // @include flexCenter(flex, baseline, null);
+}
 
 .footer {
   background-color: #2f303a;
-  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 
   //     padding-top: 60px;
   //   padding-bottom: 60px;
