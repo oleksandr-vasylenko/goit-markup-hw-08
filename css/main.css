@@ -745,9 +745,8 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 94px;
+  padding-top: 93px;
   padding-right: 15px;
-  padding-top: 94px;
   padding-left: 15px;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
@@ -1221,6 +1220,12 @@ a {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent);
+}
+
+@media screen and (max-width: 1199px) {
+  .join-social {
+    text-align: center;
+  }
 }
 
 .join-social__list {
@@ -1724,6 +1729,9 @@ a {
 }
 
 .projects__item .projects__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1746,7 +1754,14 @@ a {
 }
 
 .projects__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--speed) var(--duration);
   transition: -webkit-box-shadow var(--speed) var(--duration);
   transition: box-shadow var(--speed) var(--duration);

@@ -60,6 +60,7 @@
 }
 
 .projects__item .projects__info {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border-right: 1px solid #eeeeee;
@@ -84,7 +85,9 @@
 }
 
 .projects__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow var(--speed) var(--duration);
 
