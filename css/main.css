@@ -886,6 +886,7 @@ a {
   padding-left: 35px;
   /* need to confirm this padding - it is not specified in the instructions */
   padding-right: 15px;
+  display: block;
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -981,6 +982,8 @@ a {
 
 .modal__agree-label {
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,7 +1028,9 @@ a {
 
 .modal__icon-checked {
   position: absolute;
-  margin-right: 7px;
+  top: 0;
+  left: 0;
+  margin-right: 8px;
   opacity: 0;
   -webkit-transition: opacity var(--speed) var(--duration);
   transition: opacity var(--speed) var(--duration);
