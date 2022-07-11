@@ -42,8 +42,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-
-  //   @include flexCenter;
 }
 
 .menu__icon {
@@ -76,21 +74,6 @@
   @media screen and (max-width: 767px) {
     flex-grow: 1;
   }
-  // display: flex;
-  // flex-direction: row-reverse;
-  // justify-content: space-between;
-
-  //   @media screen and (max-width: 767px) {
-  //     margin-bottom: auto;
-  //   }
-
-  //   @media screen and (min-width: 768px) {
-  //     margin-left: 83px;
-  //   }
-
-  //   @media scren and (min-width: 1200px) {
-  //     margin-left: 93px;
-  //   }
 }
 
 .navigation__list {
@@ -101,17 +84,7 @@
     flex-direction: column;
     gap: 32px;
   }
-  // }
-
-  // .navigation__item {
 }
-
-// .navigation__item:not(:last-child) {
-//   margin-bottom: 32px;
-
-// position: relative;
-// margin-right: 50px;
-// }
 
 .navigation__link {
   font-weight: 500;
@@ -187,11 +160,3 @@
 
   color: var(--accent);
 }
-
-// .profiles__link::after {
-//   width: 1px;
-//   height: 22px;
-//   color: rgba(33, 33, 33, 0.2);
-// }
-
-// .profiles__item:not(:last-child)

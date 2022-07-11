@@ -2,24 +2,13 @@
   display: flex;
   justify-content: center;
   gap: 36px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+  }
 }
 
-// .member-social__item {
-//   margin-right: 34px;
-
-//   &:last-child {
-//     margin-right: 0;
-//   }
-
-//     margin-right: 10px;
-
-//   &:last-child {
-//     margin-right: 0;
-//   }
-// }
-
 .member-social__link {
-  //   @extend %social;
   color: var(--grey-social);
 
   transition: background-color var(--speed) var(--duration),
@@ -27,8 +16,20 @@
 
   &:hover,
   &:focus {
-    // background-color: var(--accent);
     color: var(--accent);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flexCenter();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+      color: var(--white-text);
+    }
   }
 }
 
