@@ -17,6 +17,10 @@
     gap: 30px;
     flex-direction: row;
   }
+
+  @media screen and (max-width: 360px) {
+    gap: 16px;
+  }
 }
 
 .contacts__link {

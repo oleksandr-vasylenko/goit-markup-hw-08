@@ -84,6 +84,10 @@
     flex-direction: column;
     gap: 32px;
   }
+
+  @media screen and (max-width: 360px) {
+    gap: 24px;
+  }
 }
 
 .navigation__link {
@@ -128,15 +132,25 @@
     font-size: 40px;
     line-height: 1.18;
   }
+
+  @media screen and (max-width: 360px) {
+    font-size: 28px;
+    line-height: 1.15;
+  }
 }
 
 .profiles {
   display: flex;
   margin-top: 64px;
   flex-wrap: wrap;
+  gap: 10px 0px;
 
   @media screen and (min-width: 768px) {
     display: none;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-top: 44px;
   }
 }
 
