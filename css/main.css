@@ -443,6 +443,7 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 94px 15px;
   }
 }
 
@@ -1495,6 +1496,12 @@ a {
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188ce8;
+}
+
+@media screen and (max-width: 1200px) {
+  .values__container {
+    padding-bottom: 0;
+  }
 }
 
 .values__list {

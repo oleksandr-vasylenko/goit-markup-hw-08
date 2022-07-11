@@ -1,3 +1,9 @@
+.values__container {
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 0;
+  }
+}
+
 .values__list {
   display: flex;
   flex-wrap: wrap;
