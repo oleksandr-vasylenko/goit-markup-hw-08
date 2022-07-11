@@ -91,27 +91,16 @@
 
 .hero__container {
   @media screen and (max-width: 1199px) {
-    width: 390px;
+    max-width: 420px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 726px;
+    max-width: 726px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
-  //   padding: 118px 15px;
-  //   margin: 0 auto;
-  //   width: 100%;
-
-  //   @media screen and (max-width: 1199px) {
-  //     padding: 118px 204px;
-  //   }
-
-  //   @media screen and (min-width: 1200px) {
-  //     padding: 200px 252px;
-  //   }
 }
 
 .hero__btn {

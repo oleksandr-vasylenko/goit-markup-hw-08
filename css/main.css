@@ -1512,14 +1512,14 @@ a {
 
 @media screen and (max-width: 1199px) {
   .hero__container {
-    width: 390px;
+    max-width: 420px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
-    width: 726px;
+    max-width: 726px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
