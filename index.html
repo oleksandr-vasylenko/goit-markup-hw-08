@@ -174,12 +174,12 @@
               <div class="services__thumb">
                 <img
                   srcset="
-                    ./images/services/service-01-desktop-370.jpg     370w,
-                    ./images/services/service-01-desktop-@2x-740.jpg 740w
+                    ./images/services/service-01-desktop-370.jpg     1x,
+                    ./images/services/service-01-desktop-@2x-740.jpg 2x
                   "
                   src="./images/services/service-01-desktop-370.jpg"
                   alt="Планшет и клавиатура"
-                  sizes="(min-width:1200px) 33vw"
+                  width="370"
                 />
                 <h3 class="services__name">Десктопные приложения</h3>
               </div>
@@ -188,12 +188,12 @@
               <div class="services__thumb">
                 <img
                   srcset="
-                    ./images/services/service-02-desktop-370.jpg     370w,
-                    ./images/services/service-02-desktop-@2x-740.jpg 740w
+                    ./images/services/service-02-desktop-370.jpg     1x,
+                    ./images/services/service-02-desktop-@2x-740.jpg 2x
                   "
                   src="./images/services/service-02-desktop-370.jpg"
                   alt="Цветовая схема на планшете"
-                  sizes="(min-width:1200px) 33vw"
+                  width="370"
                 />
                 <h3 class="services__name">Мобильные приложения</h3>
               </div>
@@ -202,12 +202,12 @@
               <div class="services__thumb">
                 <img
                   srcset="
-                    ./images/services/service-03-desktop-370.jpg     370w,
-                    ./images/services/service-03-desktop-@2x-740.jpg 740w
+                    ./images/services/service-03-desktop-370.jpg     1x,
+                    ./images/services/service-03-desktop-@2x-740.jpg 2x
                   "
                   src="./images/services/service-03-desktop-370.jpg"
                   alt="Ноутбук и смартфон"
-                  sizes="(min-width:1200px) 33vw"
+                  width="370"
                 />
                 <h3 class="services__name">Дизайнерские решения</h3>
               </div>
@@ -222,7 +222,22 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="members">
             <li class="members__item">
-              <img src="./images/team/igor_d.jpg" alt="Фото Игоря Д." />
+              <!-- <img src="./images/team/igor_d.jpg" alt="Фото Игоря Д." /> -->
+
+              <img
+                srcset="
+                  ./images/team/member-01-mobile-450.jpg      450w,
+                  ./images/team/member-01-mobile-@2x-900.jpg  900w,
+                  ./images/team/member-01-tablet-354.jpg      354w,
+                  ./images/team/member-01-tablet-@2x-708.jpg  708w,
+                  ./images/team/member-01-desktop-270.jpg     270w,
+                  ./images/team/member-01-desktop-@2x-540.jpg 540w
+                "
+                src="./team/member-01-mobile-450.jpg"
+                alt="Фото Игоря Д."
+                sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+              />
+
               <div class="members__info">
                 <h3 class="members__name">Игорь Демьяненко</h3>
                 <p lang="en" class="members__position">Product Designer</p>
