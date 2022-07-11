@@ -3,19 +3,24 @@
     display: none;
   }
 
+  .services__container {
+    padding-top: 0;
+  }
+
   padding-top: 0;
 }
 
 .services__list {
   display: flex;
+  gap: 30px;
 }
 
 .services__item {
   width: calc((100% - 60px) / 3);
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .services__thumb {

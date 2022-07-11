@@ -1549,12 +1549,6 @@ a {
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 1200px) {
-  .values__container {
-    padding-bottom: 0;
-  }
-}
-
 .values__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1599,12 +1593,16 @@ a {
 
 .values__headline {
   margin-bottom: 10px;
-  text-align: center;
   color: var(--secondary-text);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 767px) {
+  .values__headline {
+    text-align: center;
+  }
 }
 
 .values__description {
@@ -1622,18 +1620,19 @@ a {
     display: none;
   }
 }
+.services .services__container {
+  padding-top: 0;
+}
 
 .services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 
 .services__item {
   width: calc((100% - 60px) / 3);
-}
-.services__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .services__thumb {
