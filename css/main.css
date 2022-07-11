@@ -347,6 +347,15 @@ summary {
   letter-spacing: 0.03em;
   color: var(--secondary-text);
 }
+@media screen and (min-width: 1200px) {
+  .services__title,
+.team__title,
+.clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
 
 .join-social__title,
 .subscription__title {
