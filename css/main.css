@@ -606,11 +606,17 @@ a {
 @media screen and (max-width: 1199px) {
   .footer__connect {
     margin-bottom: 60px;
+    text-align: center;
   }
 }
 
 .footer__contacts {
   margin-top: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .footer__contacts {
+    padding-left: revert;
+  }
 }
 
 .footer__contacts .contacts__item--footer + .contacts__item--footer {
