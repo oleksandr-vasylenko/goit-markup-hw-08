@@ -91,9 +91,9 @@
 .footer__contacts {
   margin-top: 8px;
 
-  @media screen and (max-width: 1199px) {
-    padding-left: revert;
-  }
+  // @media screen and (mix-width: 768px) and (max-width: 1199px) {
+  //   padding-left: revert;
+  // }
 }
 
 .footer__contacts .contacts__item--footer + .contacts__item--footer {
@@ -112,5 +112,9 @@
   &:hover,
   &:focus {
     color: var(--accent);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
   }
 }

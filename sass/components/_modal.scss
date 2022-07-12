@@ -201,7 +201,7 @@
 
 .modal__agree-label {
   position: relative;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   gap: 5px 0px;
   @include flexCenter(flex, center, null);
 }
@@ -221,6 +221,7 @@
 .modal__icon-frame {
   margin-right: 8px;
   opacity: 1;
+  flex-shrink: 0;
 
   transition: fill var(--speed) var(--duration),
     box-shadow var(--speed) var(--duration),
@@ -246,6 +247,7 @@
   left: 0;
   margin-right: 8px;
   opacity: 0;
+  flex-shrink: 0;
 
   transition: opacity var(--speed) var(--duration);
 

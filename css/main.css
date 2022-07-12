@@ -19,15 +19,11 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
-  /* 3 */
+     tab-size: 4; /* 3 */
 }
 
 /*
@@ -39,10 +35,8 @@ Sections
 2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  margin: 0;
-  /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  /* 2 */
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
 /*
@@ -54,10 +48,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -88,10 +80,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -129,10 +119,8 @@ Tabular data
 2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -148,14 +136,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -226,10 +210,8 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -244,10 +226,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -266,50 +246,40 @@ summary {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v30-latin_cyrillic-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/roboto-v30-latin_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 /* roboto-500 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v30-latin_cyrillic-500.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-500.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/roboto-v30-latin_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-500.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 /* roboto-700 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v30-latin_cyrillic-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-700.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/roboto-v30-latin_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-700.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 /* roboto-900 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/roboto-v30-latin_cyrillic-900.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-900.svg#Roboto") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/roboto-v30-latin_cyrillic-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-900.svg#Roboto") format("svg"); /* Legacy iOS */
 }
 /* raleway-700 - latin */
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/raleway-v27-latin-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/raleway-v27-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v27-latin-700.woff2") format("woff2"), url("../fonts/raleway-v27-latin-700.woff") format("woff"), url("../fonts/raleway-v27-latin-700.ttf") format("truetype"), url("../fonts/raleway-v27-latin-700.svg#Raleway") format("svg");
-  /* Legacy iOS */
+  src: url("../fonts/raleway-v27-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/raleway-v27-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-v27-latin-700.woff2") format("woff2"), url("../fonts/raleway-v27-latin-700.woff") format("woff"), url("../fonts/raleway-v27-latin-700.ttf") format("truetype"), url("../fonts/raleway-v27-latin-700.svg#Raleway") format("svg"); /* Legacy iOS */
 }
 :root {
   --main-text: #757575;
@@ -613,11 +583,6 @@ a {
 .footer__contacts {
   margin-top: 8px;
 }
-@media screen and (max-width: 1199px) {
-  .footer__contacts {
-    padding-left: revert;
-  }
-}
 
 .footer__contacts .contacts__item--footer + .contacts__item--footer {
   margin-top: 8px;
@@ -635,6 +600,11 @@ a {
 }
 .contacts__link--footer:hover, .contacts__link--footer:focus {
   color: var(--accent);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link--footer {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -910,16 +880,14 @@ a {
 }
 
 .modal__input {
-  padding-left: 35px;
-  /* need to confirm this padding - it is not specified in the instructions */
+  padding-left: 35px; /* need to confirm this padding - it is not specified in the instructions */
   padding-right: 15px;
   display: block;
   height: 40px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  color: var(--secondary-text);
-  /* need to confirm this padding - it is not specified in the instructions */
+  color: var(--secondary-text); /* need to confirm this padding - it is not specified in the instructions */
   outline: none;
   -webkit-transition: border-color var(--speed) var(--duration);
   transition: border-color var(--speed) var(--duration);
@@ -1009,8 +977,6 @@ a {
 
 .modal__agree-label {
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 5px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1036,6 +1002,8 @@ a {
 .modal__icon-frame {
   margin-right: 8px;
   opacity: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-transition: fill var(--speed) var(--duration), opacity var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
   transition: fill var(--speed) var(--duration), opacity var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
   transition: fill var(--speed) var(--duration), box-shadow var(--speed) var(--duration), opacity var(--speed) var(--duration);
@@ -1060,6 +1028,8 @@ a {
   left: 0;
   margin-right: 8px;
   opacity: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -webkit-transition: opacity var(--speed) var(--duration);
   transition: opacity var(--speed) var(--duration);
 }
@@ -1403,8 +1373,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  color: var(--white-text);
-  /* need to confirm this color - not specified in the instruction */
+  color: var(--white-text); /* need to confirm this color - not specified in the instruction */
   border-radius: 4px;
   background-color: transparent;
   outline: none;
@@ -1462,8 +1431,7 @@ a {
   transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
 }
 .subscription__btn:hover, .subscription__btn:focus {
-  background-color: #188ce8;
-  /* need to confirm. not specified in the instr */
+  background-color: #188ce8; /* need to confirm. not specified in the instr */
 }
 
 .subscription__icon {
