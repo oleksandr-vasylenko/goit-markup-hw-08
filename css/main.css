@@ -802,7 +802,7 @@ a {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: #000000;
+  fill: var(--secondary-text);
   background-color: var(--white-text);
   cursor: pointer;
   -webkit-transition: fill var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);
@@ -1000,6 +1000,9 @@ a {
 }
 
 .modal__icon-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-right: 8px;
   opacity: 1;
   -ms-flex-negative: 0;
@@ -1035,6 +1038,12 @@ a {
 }
 .modal__checkbox:checked ~ .modal__icon-checked {
   opacity: 1;
+}
+
+.modal__agree-text {
+  margin-left: 24px;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 .menu {
