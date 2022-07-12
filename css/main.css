@@ -787,6 +787,7 @@ a {
 
 .close-btn {
   position: absolute;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -802,7 +803,7 @@ a {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: var(--secondary-text);
+  fill: #000000;
   background-color: var(--white-text);
   cursor: pointer;
   -webkit-transition: fill var(--speed) var(--duration), -webkit-box-shadow var(--speed) var(--duration);

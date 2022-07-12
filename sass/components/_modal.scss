@@ -53,6 +53,7 @@
 
 .close-btn {
   position: absolute;
+  padding: 0;
   @include flexCenter;
   top: 8px;
   right: 8px;
@@ -61,7 +62,7 @@
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: var(--secondary-text);
+  fill: #000000;
   background-color: var(--white-text);
   cursor: pointer;
 
